@@ -514,7 +514,7 @@ ECMAScript中的对象其实就是一组数据和功能的集合。Object类型�
 * `toString()`：返回对象的字符串表示。
 * `valueOf()`：返回对象的字符串、数值或布尔值表示。通常与`toString()`方法的返回值相同。
 
-<p id="div-border-left-yellow">ECMA-262中对象的行为不一定适用于JavaScript中的其他对象。浏览器环境中的对象，比如BOM和DOM中的对象，都属于宿主对象，ECMA-262不负责定义宿主对象，因此宿主对象可能会也可能不会继承Object。</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">ECMA-262中对象的行为不一定适用于JavaScript中的其他对象。浏览器环境中的对象，比如BOM和DOM中的对象，都属于宿主对象，ECMA-262不负责定义宿主对象，因此宿主对象可能会也可能不会继承Object。</p>
 
 ## 操作符
 
@@ -627,7 +627,7 @@ ECMAScript提供两组操作符：
 * 要比较相等性之前，不能将`null`和`undefined`转换成其他任何值
 * 如果有一个操作数是`NaN`，则相等操作符返回`false`，不相等操作符返回`true`
 
-<p id="div-border-left-red">即使两个操作数都是`NaN`，相等操作符也返回`false`，因为按规则`NaN`不等于`NaN`</p>
+<p style="border-left: 4px solid red; padding: 10px;">即使两个操作数都是`NaN`，相等操作符也返回`false`，因为按规则`NaN`不等于`NaN`</p>
 
 * 如果两个操作数都是对象，则比较它们是不是同一个对象。如果指向同一个对象，则相等操作符返回`true`；否则返回`false`
 
@@ -767,7 +767,7 @@ console.log(num1);	//95
 
 在`switch`语句中可以使用任何数据类型。`case`的值可以是常量、变量或者表达式。
 
-<p id="div-border-left-yellow">`switch`语句在比较值时使用的是全等操作符，因此不会发送类型转换</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">`switch`语句在比较值时使用的是全等操作符，因此不会发送类型转换</p>
 
 ## 函数
 
@@ -889,7 +889,7 @@ console.log(person2.name);	//tc
 
 ![20170611149717715737614.jpg](../_images/《JavaScript高级程序设计》学习笔记（一）/20170611149717715737614.jpg)
 
-<p id="div-border-left-yellow">可以把ECMAScript函数的参数想象成局部变量</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">可以把ECMAScript函数的参数想象成局部变量</p>
 
 ### 检测类型
 
@@ -1039,7 +1039,7 @@ function getColor() {
 console.log(getColor());	//blue
 ```
 
-<p id="div-border-left-yellow">访问局部变量要比访问全局变量更快，JavaScript引擎在优化标识符查询方面做得不错，这个差距可以忽略。</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">访问局部变量要比访问全局变量更快，JavaScript引擎在优化标识符查询方面做得不错，这个差距可以忽略。</p>
 
 ## 垃圾收集
 
@@ -1094,7 +1094,7 @@ var person = {
 };
 ```
 
-<p id="div-border-left-yellow">使用对象字面量定义对象时，实际上不会调用Object构造函数。</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">使用对象字面量定义对象时，实际上不会调用Object构造函数。</p>
 
 访问对象属性时可以使用点表示法或方括号表示法。
 
@@ -1140,7 +1140,7 @@ var colors = ['red','green','blue'];
 var colors = [];
 ```
 
-<p id="div-border-left-yellow">使用对象字面量定义数组时，实际上不会调用Array构造函数。</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">使用对象字面量定义数组时，实际上不会调用Array构造函数。</p>
 
 在读取和设置数组的值时，要使用方括号并提供相应的基于0的数字索引。
 
@@ -1329,7 +1329,7 @@ console.log(colors2);	//["green", "blue", "yellow", "pink"]
 console.log(colors3);	//["green", "blue", "yellow"]
 ```
 
-<p id="div-border-left-yellow">如果`slice()`方法的参数中有一个负数，则利用数组长度加上该数来确定相应的位置。例如，在一个包含5项的数组中，`slice(-2,-1)`与`slice(3,4)`结果相同。</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">如果`slice()`方法的参数中有一个负数，则利用数组长度加上该数来确定相应的位置。例如，在一个包含5项的数组中，`slice(-2,-1)`与`slice(3,4)`结果相同。</p>
 
 `splice()`方法主要用途是向数组的中部插入项，但是该方法有下面三种使用方式：
 
@@ -1550,7 +1550,7 @@ var pattern1 = new RegExp('[bc]at','i');
 
 要注意的是，传递给RegExp构造函数的两个参数都是字符串，所以在某些情况下要对字符进行双重转义。所有元字符必须双重转义，转义过的字符也是如此。
 
-<p id="div-border-left-blue">使用正则表达式字面量和使用RegExp构造函数创建的正则表达式不一样。在ECMAScript3中，正则表达式字面量始终会共享同一个RegExp实例，而使用构造函数创建的每一个新RegExp实例都是一个新的实例。
+<p style="border-left: 4px solid blue; padding: 10px;">使用正则表达式字面量和使用RegExp构造函数创建的正则表达式不一样。在ECMAScript3中，正则表达式字面量始终会共享同一个RegExp实例，而使用构造函数创建的每一个新RegExp实例都是一个新的实例。
 
 在下面例子中，第一个循环只为`/cat/`创建了一个RegExp实例。由于实例属性不会重置，所以在循环中再次调用`test()`方法会失败。这个是因为第一次调用`test()`找到了`“cat”`，但第二次调用是从索引为3的字符（上次匹配的末尾）开始，所以找不到它。由于会测试到字符串末尾，所以下次再调用`test()`就又从开头开始了。
 
@@ -2338,7 +2338,7 @@ sayHi();				//hello
 
 在严格模式下，在外部访问不到`eval()`中创建的任何变量或函数，同样在严格模式下，为`eval()`赋值也会导致错误。
 
-<p id="div-border-left-red">使用`eval()`必须极为谨慎，特别是在用它执行用户输入数据的情况下，因为可能会有恶意的代码注入。</p>
+<p style="border-left: 4px solid red; padding: 10px;">使用`eval()`必须极为谨慎，特别是在用它执行用户输入数据的情况下，因为可能会有恶意的代码注入。</p>
 
 #### Global对象的属性
 

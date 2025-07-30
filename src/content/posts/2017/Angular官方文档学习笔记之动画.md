@@ -13,7 +13,7 @@ lang: zh
 
 ![20170330149087977640187.png](../_images/Angular官方文档学习笔记之动画/20170330149087977640187.png)
 
-<P id="div-border-left-green">Angular动画是基于标准的[Web动画API(Web Animations API)](https://w3c.github.io/web-animations/)构建的，它们在[支持此API的浏览器中](http://caniuse.com/#feat=web-animation)会用原生方式工作。
+<p style="border-left: 4px solid green; padding: 10px;">Angular动画是基于标准的[Web动画API(Web Animations API)](https://w3c.github.io/web-animations/)构建的，它们在[支持此API的浏览器中](http://caniuse.com/#feat=web-animation)会用原生方式工作。
 
 至于其它浏览器，就需要一个填充库(polyfill)了。你可以[从这里获取`web-animations.min.js`](https://github.com/web-animations/web-animations-js)，并把它加入你的页面中。</p>
 
@@ -25,7 +25,7 @@ lang: zh
 import { Component,Input,trigger,state,style,transition,animate,group} from '@angular/core';
 ```
 
-<p id="div-border-left-red">在Angular刚刚发布的4.0版本中，动画已经从`@angular/core`中拆分出来。</p>
+<p style="border-left: 4px solid red; padding: 10px;">在Angular刚刚发布的4.0版本中，动画已经从`@angular/core`中拆分出来。</p>
 
 ```typescript
   animations: [
@@ -128,7 +128,7 @@ animations: [
 
 没有一个单独的`state(void)`定义是因为希望在进场与离场时使用不一样的转换效果：元素从左侧进场，从右侧离开。
 
-<p id="div-border-left-yellow">这两个动画有自己的名字：
+<p style="border-left: 4px solid yellow; padding: 10px;">这两个动画有自己的名字：
 
 ```typescript
 transition(':enter', [ ... ]); // void => *

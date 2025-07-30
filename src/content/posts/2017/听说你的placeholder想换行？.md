@@ -23,7 +23,7 @@ lang: zh
 
 翻译过来就是：
 
-<p id="div-border-left-red">placeholder属性是用来帮助用户输入的简短提示（一个字或者一个短语），这个提示应该是简单的数值或者简短的描述。placeholder属性不应该作为`label`的替代者。对于较长或者复杂的提示，将文本置于控件旁边。</p>
+<p style="border-left: 4px solid red; padding: 10px;">placeholder属性是用来帮助用户输入的简短提示（一个字或者一个短语），这个提示应该是简单的数值或者简短的描述。placeholder属性不应该作为`label`的替代者。对于较长或者复杂的提示，将文本置于控件旁边。</p>
 
 ## 解决办法
 

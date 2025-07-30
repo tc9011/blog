@@ -23,7 +23,7 @@ lang: zh
 
 你可以在[这个github仓库](https://github.com/maximusk/dom-manipulation-workshop)中找到我在演讲中使用的例子。
 
-<div class="dividing-line"></div>	
+---	
 
 ## 窥视视图引擎
 
@@ -79,7 +79,7 @@ export class AppComponent {
 
 为了**正确地**解决这个问题，我们需要一个可以直接处理视图的工具，在Angular中这个工具就是[View Container](https://angular.io/api/core/ViewContainerRef)。
 
-<div class="dividing-line"></div>
+---
 
 ## View Container
 
@@ -189,7 +189,7 @@ export class AppComponent implements AfterViewChecked {
 
 因此，为了正确地删除子组件或任何DOM元素，首先需要创建一个嵌入或宿主视图并将其附加到view container。这样做后，你将能够使用任何可用的API方法将其从view container和DOM中移除。
 
-<div class="dividing-line"></div>	
+---	
 
 ## 优化技术
 

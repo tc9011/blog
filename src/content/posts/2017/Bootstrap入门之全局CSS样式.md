@@ -22,7 +22,7 @@ Bootstrap是简单、灵活的用于开发响应式布局、移动设备优先�
 
 ### 基本模板
 
-<p id="div-border-left-yellow">**Bootstrap 的所有 JavaScript 插件都依赖 jQuery，**因此 jQuery 必须在 Bootstrap 之前引入。在[ `bower.json` 文件中](https://github.com/twbs/bootstrap/blob/v3.3.7/bower.json) 列出了 Bootstrap 所支持的 jQuery 版本</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">**Bootstrap 的所有 JavaScript 插件都依赖 jQuery，**因此 jQuery 必须在 Bootstrap 之前引入。在[ `bower.json` 文件中](https://github.com/twbs/bootstrap/blob/v3.3.7/bower.json) 列出了 Bootstrap 所支持的 jQuery 版本</p>
 
 ```html
 <!DOCTYPE html>
@@ -839,7 +839,7 @@ Bootstrap 将全局 `font-size` 设置为 **14px**，`line-height` 设置为
 
 将任何 `.table` 元素包裹在 `.table-responsive` 元素内，即可创建响应式表格，其会在小屏幕设备上（小于768px）水平滚动。当屏幕大于 768px 宽度时，水平滚动条消失。
 
-<p id="div-border-left-yellow">响应式表格使用了 `overflow-y: hidden` 属性，这样就能将超出表格底部和顶部的内容截断。同时这样也会截断下拉菜单和其他第三方组件。
+<p style="border-left: 4px solid yellow; padding: 10px;">响应式表格使用了 `overflow-y: hidden` 属性，这样就能将超出表格底部和顶部的内容截断。同时这样也会截断下拉菜单和其他第三方组件。
 
 Firefox 浏览器对 `fieldset` 元素设置了一些影响 `width` 属性的样式，导致响应式表格出现问题。可以使用下面提供的针对 Firefox 的 hack 代码解决，但是以下代码并未集成在 Bootstrap 中：`@-moz-document url-prefix() {  fieldset { display: table-cell; }}`</p>
 
@@ -932,7 +932,7 @@ Firefox 浏览器对 `fieldset` 元素设置了一些影响 `width` 属性�
 
 为 `<form>` 元素添加 `.form-inline` 类可使其内容左对齐并且表现为 `inline-block` 级别的控件。**只适用于视口（viewport）至少在 768px 宽度时（视口宽度再小的话就会使表单折叠）。**
 
-<p id="div-border-left-yellow">在 Bootstrap 中，输入框和单选/多选框控件默认被设置为 `width: 100%;` 宽度。在内联表单，这些元素的宽度设置为 `width: auto;`，因此，多个控件可以排列在同一行。根据你的布局需求，可能需要一些额外的定制化组件。
+<p style="border-left: 4px solid yellow; padding: 10px;">在 Bootstrap 中，输入框和单选/多选框控件默认被设置为 `width: 100%;` 宽度。在内联表单，这些元素的宽度设置为 `width: auto;`，因此，多个控件可以排列在同一行。根据你的布局需求，可能需要一些额外的定制化组件。
 
 如果你没有为每个输入控件设置 `label` 标签，屏幕阅读器将无法正确识别。对于这些内联表单，可以通过为 `label` 设置 `.sr-only` 类将其隐藏。还有一些辅助技术提供label标签的替代方案，比如 `aria-label`、`aria-labelledby` 或 `title` 属性。如果这些都不存在，屏幕阅读器可能会采取使用 `placeholder` 属性来替代其他的标记，但要注意，这种方法是不妥当的。</p>
 
@@ -1208,7 +1208,7 @@ Bootstrap 对表单控件的校验状态，如 error、warning 和 success 状�
 
 **反馈图标（feedback icon）只能使用在文本输入框`<input class="form-control">`元素上。**
 
-<p id="div-border-left-yellow">对于不带有 `label` 标签的输入框以及右侧带有附加组件的[输入框组](http://v3.bootcss.com/components#input-groups)，需要手动为其图标定位。为了让所有用户都能访问你的网站，强烈建议为所有输入框添加 `label` 标签。如果你不希望将 `label` 标签展示出来，可以通过添加 `.sr-only` 类来实现。如果的确不能添加 `label` 标签，请调整图标的 `top`值。对于输入框组，请根据你的实际情况调整 `right` 值。</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">对于不带有 `label` 标签的输入框以及右侧带有附加组件的[输入框组](http://v3.bootcss.com/components#input-groups)，需要手动为其图标定位。为了让所有用户都能访问你的网站，强烈建议为所有输入框添加 `label` 标签。如果你不希望将 `label` 标签展示出来，可以通过添加 `.sr-only` 类来实现。如果的确不能添加 `label` 标签，请调整图标的 `top`值。对于输入框组，请根据你的实际情况调整 `right` 值。</p>
 
 ```html
 <div class="form-group has-success has-feedback">
@@ -1289,7 +1289,7 @@ Bootstrap 对表单控件的校验状态，如 error、warning 和 success 状�
 
 为 `<a>`、`<button>`、或`<input>` 元素添加按钮类（button class）即可使用 Bootstrap 提供的样式。
 
-<p id="div-border-left-yellow">虽然按钮类可以应用到 `<a>`和 `<button>` 元素上，但是，导航和导航条组件只支持 `<button>` 元素。
+<p style="border-left: 4px solid yellow; padding: 10px;">虽然按钮类可以应用到 `<a>`和 `<button>` 元素上，但是，导航和导航条组件只支持 `<button>` 元素。
 
 如果 `<a>`元素被作为按钮使用 -- 并用于在当前页面触发某些功能 -- 而不是用于链接其他页面或链接当前页面中的其他部分，那么，务必为其设置 `role="button"` 属性。
 
@@ -1361,7 +1361,7 @@ Bootstrap 对表单控件的校验状态，如 error、warning 和 success 状�
 
 如果需要让使用了 `.img-responsive` 类的图片水平居中，请使用 `.center-block` 类，不要用 `.text-center`。
 
-<p id="div-border-left-yellow">在 Internet Explorer 8-10 中，设置为 `.img-responsive` 的 SVG 图像显示出的尺寸不匀称。为了解决这个问题，在出问题的地方添加 `width: 100% \9;` 即可</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">在 Internet Explorer 8-10 中，设置为 `.img-responsive` 的 SVG 图像显示出的尺寸不匀称。为了解决这个问题，在出问题的地方添加 `width: 100% \9;` 即可</p>
 
 ```html
 <img src="img_8488.jpg" class="img-responsive" alt="Responsive image">

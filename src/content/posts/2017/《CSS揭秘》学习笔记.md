@@ -321,7 +321,7 @@ box-shadow: 0 0 0 10px #655,
 
 #### calc()方案
 
-<p id="div-border-left-red">请不要忘记在`calc()`函数内部的`-`和`+`运算符的两侧各加一个空白符，否则会产生解析错误。</p>
+<p style="border-left: 4px solid red; padding: 10px;">请不要忘记在`calc()`函数内部的`-`和`+`运算符的两侧各加一个空白符，否则会产生解析错误。</p>
 
 ```css
   background: url(http://csssecrets.io/images/code-pirate.svg)
@@ -345,7 +345,7 @@ background: tan;
 
 ### 条纹背景
 
-<p id="div-border-left-green">如果多个色标具有相同的位置，它们会产生一个无限小的过度区域，过度的起止色分别是第一个和最后一个指定值。从效果上看，颜色会在那个位置突然变化，而不是一个平滑的渐变过程：`background: linear-gradient(#fb3 50%, #58a 50%);`。</p>
+<p style="border-left: 4px solid green; padding: 10px;">如果多个色标具有相同的位置，它们会产生一个无限小的过度区域，过度的起止色分别是第一个和最后一个指定值。从效果上看，颜色会在那个位置突然变化，而不是一个平滑的渐变过程：`background: linear-gradient(#fb3 50%, #58a 50%);`。</p>
 
 ![20170302802142017-03-02_08-04-38.png](../_images/《CSS揭秘》学习笔记/20170302802142017-03-02_08-04-38.png)
 
@@ -434,7 +434,7 @@ background: repeating-linear-gradient(30deg, #79b 0, #79b 15px, #58a 0, #58a 30p
 }
 ```
 
-<p id="div-border-left-green">[Bennett的图案库](http://bennettfeely.com/gradients/)</p>
+<p style="border-left: 4px solid green; padding: 10px;">[Bennett的图案库](http://bennettfeely.com/gradients/)</p>
 
 ### 伪随机背景
 
@@ -453,7 +453,7 @@ background-image: linear-gradient(90deg, #fb3 10px,  transparent 0),
 
 ### 连续的图像边框
 
-<p id="div-border-left-green">`border-image`工作原理是把图片分成9块，然后把他们应用到元素边框的边和角。![20170304174092017-03-04_14-47-26.png](../_images/《CSS揭秘》学习笔记/20170304174092017-03-04_14-47-26.png)</p>
+<p style="border-left: 4px solid green; padding: 10px;">`border-image`工作原理是把图片分成9块，然后把他们应用到元素边框的边和角。![20170304174092017-03-04_14-47-26.png](../_images/《CSS揭秘》学习笔记/20170304174092017-03-04_14-47-26.png)</p>
 
 使用`border-image`生成边框，需要额外的html元素：
 
@@ -533,7 +533,7 @@ padding-top : 1em;
 
 给任何足够大的正方形元素设置一个足够大的`border-radius`就可以把它变成一个圆形。
 
-<p id="div-border-left-green">当任意两个相邻圆角的半径之和超过border box的尺寸时，用户代理必须按比例减小各个边框半径所使用的值，直到它们不会相互重叠为止。</p>
+<p style="border-left: 4px solid green; padding: 10px;">当任意两个相邻圆角的半径之和超过border box的尺寸时，用户代理必须按比例减小各个边框半径所使用的值，直到它们不会相互重叠为止。</p>
 
 `border-radius`可以单独指定水平和垂直半径，只要用`/`分隔两个值即可。
 
@@ -759,7 +759,7 @@ border-image: 1 url('data:image/svg+xml,\
 
 
 
-<p id="div-border-left-green">一个负的延时值是合法的。与0s的延时类似，它意味着动画会立即开始播放，但会自动前进到延时值的绝对值处，就好像动画在过去已经播放了指定的时间一样。因此实际效果就是动画跳过指定时间而从中间开始播放了。</p>
+<p style="border-left: 4px solid green; padding: 10px;">一个负的延时值是合法的。与0s的延时类似，它意味着动画会立即开始播放，但会自动前进到延时值的绝对值处，就好像动画在过去已经播放了指定的时间一样。因此实际效果就是动画跳过指定时间而从中间开始播放了。</p>
 
 可以用负的动画延时来直接跳至动画中的任意时间点，并且定格在那里，以此来实现按照比率来显示饼图。这里的动画永远处于暂停状态，指定的持续时间并不会产生任何副作用。
 
@@ -786,7 +786,7 @@ SVG描边时总会把一半绘制在元素外部，另一半绘制在元素内�
 
 ![20170308782712017-03-08_22-11-15.png](../_images/《CSS揭秘》学习笔记/20170308782712017-03-08_22-11-15.png)
 
-<p id="div-border-left-red">**所以`box-shadow`中，没有任何投影绘制在元素的下层**。</p>
+<p style="border-left: 4px solid red; padding: 10px;">**所以`box-shadow`中，没有任何投影绘制在元素的下层**。</p>
 
 `text-shadow`中，文字下层的投影不会被剪裁。
 
@@ -1364,7 +1364,7 @@ $$('.circular').forEach(function (el) {
 
 ### 自定义复选框
 
-<p id="div-border-left-yellow">伪类选择符`:checked`和属性选择符`[checked]`的区别是：后者不会根据用户的交互行为进行更新，因为用户的交互不会影响到HTML标签上的属性。</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">伪类选择符`:checked`和属性选择符`[checked]`的区别是：后者不会根据用户的交互行为进行更新，因为用户的交互不会影响到HTML标签上的属性。</p>
 
 可以基于复选框的勾选状态借助组合选择符来给其他元素设置样式。
 
@@ -1502,7 +1502,7 @@ input[type="checkbox"]:active + label {
 }
 ```
 
-<p id="div-border-left-yellow">这个方案没有成功~~~</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">这个方案没有成功~~~</p>
 
 #### box-shadow方案
 
@@ -1577,7 +1577,7 @@ filter: blur(3px) contrast(.8) brightness(.8);
 
 ### 滚动提示
 
-<p id="div-border-left-yellow">`background-attachment `属性有三个值：`scroll`、`fixed`、`local`。
+<p style="border-left: 4px solid yellow; padding: 10px;">`background-attachment `属性有三个值：`scroll`、`fixed`、`local`。
 
 `scroll`是默认值，背景图像会随着页面其余部分的滚动而移动。
 
@@ -1637,7 +1637,7 @@ ul {
 
 #### CSS resize方案
 
-<p id="div-border-left-yellow">`resize`属性控制元素是否能被用户缩放，有`none`、`both`、`horizontal`、`vertical`、`block`、`inline`这几个属性。其中：
+<p style="border-left: 4px solid yellow; padding: 10px;">`resize`属性控制元素是否能被用户缩放，有`none`、`both`、`horizontal`、`vertical`、`block`、`inline`这几个属性。其中：
 
 `none`表示元素不能被用户缩放。
 
@@ -1821,7 +1821,7 @@ figure {
 }
 ```
 
-<p id="div-border-left-yellow"> `width`和`height`属性其他的值还有`max-content`，它的行为类似于`display: inline-block`；`fit-content`的行为与浮动元素是相同的（和`min-content`效果通常一致，但也有例外）</p>
+<p style="border-left: 4px solid yellow; padding: 10px;"> `width`和`height`属性其他的值还有`max-content`，它的行为类似于`display: inline-block`；`fit-content`的行为与浮动元素是相同的（和`min-content`效果通常一致，但也有例外）</p>
 
 ### 精确控制表格列宽
 
@@ -1890,7 +1890,7 @@ li:first-child:nth-last-child ( n + 2 ) :nth-last-child ( -n + 4 ), li:first-chi
 
 `calc()`函数允许在css中直接进行简单的算式来指定属性的值。
 
-<p id="div-border-left-red">别忘了在`calc()`函数中用 空白符把`-`和`+`隔起来，否则会 产生解析错误！这个看似怪异的规则是为了向前兼容，因为在未来，`calc()`可能会允许使用标识符， 而这些标识符本身可能会包含连字符，容易与减号混淆。</p>
+<p style="border-left: 4px solid red; padding: 10px;">别忘了在`calc()`函数中用 空白符把`-`和`+`隔起来，否则会 产生解析错误！这个看似怪异的规则是为了向前兼容，因为在未来，`calc()`可能会允许使用标识符， 而这些标识符本身可能会包含连字符，容易与减号混淆。</p>
 
 如果内容居中，左右外边距实际上都等于视口宽度的一半减去内容宽度的一半，而且使用`calc()`函数计算出的值可以用在任何一个接受长度值的属性上，所以可以这样写：
 
@@ -1968,7 +1968,7 @@ footer {
 }
 ```
 
-<p id="div-border-left-yellow">`translate()`用来移动元素在平面上的位置。这种变换的特点是一个向量，其坐标定义多少，它在每个方向移动多少。
+<p style="border-left: 4px solid yellow; padding: 10px;">`translate()`用来移动元素在平面上的位置。这种变换的特点是一个向量，其坐标定义多少，它在每个方向移动多少。
 
 ![20170328149070517652749.png](../_images/《CSS揭秘》学习笔记/20170328149070517652749.png)</p>
 
@@ -2036,7 +2036,7 @@ main {
 }
 ```
 
-<p id="div-border-left-yellow">`justify-content`用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式。
+<p style="border-left: 4px solid yellow; padding: 10px;">`justify-content`用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式。
 
 `align-items`属性属性定义flex子项在flex容器的当前行的侧轴（纵轴）方向上的对齐方式。这意味着它像`justify-content`一样，但是在垂直方向。</p>
 
@@ -2097,7 +2097,7 @@ main {
 }
 ```
 
- <p id="div-border-left-yellow">`flex`属 性 实 际 上 是`flex-grow`、`flex-shrink`和`flex-basis`的 简 写 语 法。 任 何 元素只要设置了一个大于 0 的`flex`值， 就将获得可伸缩的特 性；`flex`的值负责控制多个可伸 缩元素之间的尺寸分配比例。 举例来说，在上面的这个例子中， 如 果`<main>`是`flex: 2`而 `<footer>`是`flex: 1`，那么内容 区块的高度将是页脚高度的两倍。如果把它们的值从 2 和 1 改为 4和 2 ， 结果也是一样的， 因为真 正起作用的是它们的数值比例。</p>
+ <p style="border-left: 4px solid yellow; padding: 10px;">`flex`属 性 实 际 上 是`flex-grow`、`flex-shrink`和`flex-basis`的 简 写 语 法。 任 何 元素只要设置了一个大于 0 的`flex`值， 就将获得可伸缩的特 性；`flex`的值负责控制多个可伸 缩元素之间的尺寸分配比例。 举例来说，在上面的这个例子中， 如 果`<main>`是`flex: 2`而 `<footer>`是`flex: 1`，那么内容 区块的高度将是页脚高度的两倍。如果把它们的值从 2 和 1 改为 4和 2 ， 结果也是一样的， 因为真 正起作用的是它们的数值比例。</p>
 
 ## 过渡与动画
 
@@ -2261,7 +2261,7 @@ input:not(:focus) + .callout {
 }
 ```
 
-<p id="div-border-left-yellow">可以通过`transition-delay`属 性把各个属性的过渡过程排成列队， 这个 属性的值实际上就是`transition`简写属性中的第二个时间值。 举例 来 说， 如 果`width`和`height`都需要过渡效果， 而且你希望高 度先变化然后宽度再变化， 就可以这样 写：`transition: .5s height, .8s .5s width;`（ 也 就 是 说， 让 width过渡的延时正好等于`height`过渡的持续时间）。</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">可以通过`transition-delay`属 性把各个属性的过渡过程排成列队， 这个 属性的值实际上就是`transition`简写属性中的第二个时间值。 举例 来 说， 如 果`width`和`height`都需要过渡效果， 而且你希望高 度先变化然后宽度再变化， 就可以这样 写：`transition: .5s height, .8s .5s width;`（ 也 就 是 说， 让 width过渡的延时正好等于`height`过渡的持续时间）。</p>
 
 ### 逐帧动画
 
@@ -2303,7 +2303,7 @@ input:not(:focus) + .callout {
 
 `steps()`还接受可选的第二个参数， 其值可以是`start`或`end`（默认值）。这个参数用于指定动画在每个循环周期的什么位置发生帧的切换动作，但实际上这个参数用得并不 多。 如果我们只需要一个单步切换效果， 还可以使用`step-start`和`step- end`这样的简写属性，它们分别等同于`steps(1, start)`和`steps(1, end)`。
 
-<p id="div-border-left-yellow">对`steps(1, start)`和`steps(1, end)`的理解可以参照闪烁效果中的例子</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">对`steps(1, start)`和`steps(1, end)`的理解可以参照闪烁效果中的例子</p>
 
 ### 闪烁效果
 
@@ -2596,7 +2596,7 @@ $$('h1').forEach(function (h1) {
 
 #### 单个元素的解决方案
 
-<p id="div-border-left-green">`transform-origin`只是一个语法糖而已。实际上你总是可以用`translate()`来代替它</p>
+<p style="border-left: 4px solid green; padding: 10px;">`transform-origin`只是一个语法糖而已。实际上你总是可以用`translate()`来代替它</p>
 
 每 个`transform-origin`都是可以被两个`translate()`模拟出来的。比如，下面两段代码实际上是等效的：
 

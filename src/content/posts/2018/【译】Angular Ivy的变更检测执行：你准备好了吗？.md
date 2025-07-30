@@ -23,13 +23,13 @@ lang: zh
 
 ![20180608152845940763864.png](../_images/【译】Angular Ivy的变更检测执行：你准备好了吗？/20180608152845940763864.png)
 
-<div class="dividing-line"></div>	
+---	
 
 虽然新的Ivy渲染器的重要性还没有完全展现出来，但许多人想知道它将如何工作以及它为我们准备的变化。
 
 在本文中，我将展示Ivy变更检测机制，展示一些让我非常兴奋的事情，并从头开始，根据指导（类似于Angular Ivy指导）构建简单的app。
 
-<div class="dividing-line"></div>	
+---	
 
 首先，介绍一下我下面将研究的app：
 
@@ -231,7 +231,7 @@ export function markDirty<T>(component: T) {
 
 没变化:)
 
-<div class="dividing-line"></div>	
+---	
 
 当我调试新的变更检测机制时，我注意到我忘记了安装zone.js。而且，正如你已经猜到的一样，它没有依赖性，没有`cdRef.detectChanges`或`tick`，它依然完美运行。
 

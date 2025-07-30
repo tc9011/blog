@@ -37,7 +37,7 @@ Git是由 Linux 之父 Linus Tovalds 创立的代码版本控制系统。你可�
 
 参考Angular团队，就可以利用Github进行个人项目的敏捷开发或者学习。
 
-<p id="div-border-left-yellow">关于敏捷开发：
+<p style="border-left: 4px solid yellow; padding: 10px;">关于敏捷开发：
 
 一般敏捷开发以两周为一个周期，称为一个迭代。在一个迭代中快速完成预估的工作量。我们团队的Scrum敏捷开发的步骤如下：
 

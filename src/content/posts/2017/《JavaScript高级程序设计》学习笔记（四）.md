@@ -751,7 +751,7 @@ Attr对象有3个属性：`name`、`value`和`specified`。其中，`name`是特
 
 使用`document.createAttribute()`并传入特性的名称可以创建新的特性节点。
 
-<p id='div-border-left-yellow'>并不建议直接访问特性节点。使用`getAttribute()`、`setAttribute()`和`removeAttribute()`方法远比操作特性节点更为方便。</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">并不建议直接访问特性节点。使用`getAttribute()`、`setAttribute()`和`removeAttribute()`方法远比操作特性节点更为方便。</p>
 
 ## DOM操作技术
 

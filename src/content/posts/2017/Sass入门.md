@@ -273,7 +273,7 @@ sass style.scss:style.css --style compressed
 
 ![20170402149111976877854.png](../_images/Sass入门/20170402149111976877854.png)
 
-<p id="div-border-left-red">项目所在的路径中请不要出现中文，不然sass在编译是会出现编码错误。并且在Sass的编译的过程中，是不是支持`GBK`编码的。所以在创建 Sass 文件时，就需要将文件编码设置为`utf-8`。</p>
+<p style="border-left: 4px solid red; padding: 10px;">项目所在的路径中请不要出现中文，不然sass在编译是会出现编码错误。并且在Sass的编译的过程中，是不是支持`GBK`编码的。所以在创建 Sass 文件时，就需要将文件编码设置为`utf-8`。</p>
 
 ### Sass调试
 
@@ -545,7 +545,7 @@ Sass 允许将一套 CSS 样式嵌套进另一套样式中，内层的样式将�
 
 当父选择器含有不合适的后缀时，Sass 将会报错。
 
-<p id="div-border-left-yellow">**避免选择器嵌套：**
+<p style="border-left: 4px solid yellow; padding: 10px;">**避免选择器嵌套：**
 
 - 选择器嵌套最大的问题是将使最终的代码难以阅读。开发者需要花费巨大精力计算不同缩进级别下的选择器具体的表现效果。
 - 选择器越具体则声明语句越冗长，而且对最近选择器的引用(&)也越频繁。在某些时候，出现混淆选择器路径和探索下一级选择器的错误率很高，这非常不值得。</p>
@@ -1897,7 +1897,7 @@ $social-colors: (
   color: #3b5998; }
 ```
 
-<p id="div-border-left-yellow">如果 $key 不在 $map 中，不会编译出 CSS，其实在 Sass 中，map-get($social- colors,weibo) 返回了一个 null 值。但在编译出来的 CSS 中，你只知道他没有编译出样式，而且在命令终端编译时，也没有任何错误或者警告信息。说实话，你并不知道他为什么编译不出来样式，或者说他已返回了值为 null。</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">如果 $key 不在 $map 中，不会编译出 CSS，其实在 Sass 中，map-get($social- colors,weibo) 返回了一个 null 值。但在编译出来的 CSS 中，你只知道他没有编译出样式，而且在命令终端编译时，也没有任何错误或者警告信息。说实话，你并不知道他为什么编译不出来样式，或者说他已返回了值为 null。</p>
 
 #### map-has-key(\$map,\$key)
 
@@ -1924,7 +1924,7 @@ $social-colors: (
   color: #3b5998; }
 ```
 
-<p id="div-border-left-yellow">这样可以解决map-get(\$social- colors,weibo) 返回了一个 null 值后没有提示的状态。其实可以自定义一个函数来实现：</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">这样可以解决map-get(\$social- colors,weibo) 返回了一个 null 值后没有提示的状态。其实可以自定义一个函数来实现：</p>
 
 ```scss
 @function colors($color){
@@ -1985,7 +1985,7 @@ $list: map-keys($social-colors);
   content: dribble, facebook, github, google, twitter; }
 ```
 
-<p id="div-border-left-yellow">上面的`@function colors函数可以做通过 map-keys(\$map) 来做一个修改：</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">上面的`@function colors函数可以做通过 map-keys(\$map) 来做一个修改：</p>
 
 ```scss
 @function colors($color){

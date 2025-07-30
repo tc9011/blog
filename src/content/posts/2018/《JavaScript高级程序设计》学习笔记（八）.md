@@ -35,7 +35,7 @@ xhr.open('get', 'example.php', false);
 
 这个代码会启动一个针对`example.php`的`GET`请求。这行代码中，URL相对于执行代码的当前页面（当然也可以使用绝对路径），调用`open()`方法并不会真正发送请求，而只是启动一个请求以备发送。
 
-<p id="div-border-left-red">只能向使用相同端口和协议的URL发送请求</p>
+<p style="border-left: 4px solid red; padding: 10px;">只能向使用相同端口和协议的URL发送请求</p>
 
 要发送特定的请求，必须调用`send()`方法：
 

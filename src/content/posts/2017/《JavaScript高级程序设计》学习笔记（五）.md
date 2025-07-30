@@ -733,7 +733,7 @@ EventUtil.addHandler(window, 'scroll', function (event) {
 
 与`resize`事件类似，`scroll`事件也会在文档被滚动期间重复被触发，所以有必要尽量保持事件处理程序的代码简单。
 
-<p id="div-border-left-yellow">`scroll`事件只要页面滚动就触发，包括鼠标滚动引起的、键盘方向键引起的滚动以及拖动滚动条引起的</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">`scroll`事件只要页面滚动就触发，包括鼠标滚动引起的、键盘方向键引起的滚动以及拖动滚动条引起的</p>
 
 ### 焦点事件
 

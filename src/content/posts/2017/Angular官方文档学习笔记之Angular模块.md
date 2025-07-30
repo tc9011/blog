@@ -32,7 +32,7 @@ Angular 模块是一个由`@NgModule`装饰器提供元数据的类，元数据�
 
 ### 通过即时 (JiT) 编译器动态引导
 
-<p id="div-border-left-green">什么是Angular编译器？
+<p style="border-left: 4px solid green; padding: 10px;">什么是Angular编译器？
 
 *Angular编译器*会把我们所写的应用代码转换成高性能的JavaScript代码。 在编译过程中，`@NgModule`的元数据扮演了很重要的角色。
 
@@ -84,9 +84,9 @@ platformBrowser().bootstrapModuleFactory(AppModuleNgFactory);
 
 `BrowserModule`导入了`CommonModule`并且[*重新导出*](https://angular.cn/docs/ts/latest/cookbook/ngmodule-faq.html#q-re-export)了它。 最终的效果是：只要导入`BrowserModule`就自动获得了`CommonModule`中的指令。
 
-<p id="div-border-left-green">模块可以重新导出其它模块，这会导致重新导出它们导出的所有类。 纯服务类的模块不会导出任何可供其它模块使用的[可声明类](https://angular.cn/docs/ts/latest/cookbook/ngmodule-faq.html#q-declarable)，例如`HttpModule`</p>
+<p style="border-left: 4px solid green; padding: 10px;">模块可以重新导出其它模块，这会导致重新导出它们导出的所有类。 纯服务类的模块不会导出任何可供其它模块使用的[可声明类](https://angular.cn/docs/ts/latest/cookbook/ngmodule-faq.html#q-declarable)，例如`HttpModule`</p>
 
-<p id="div-border-left-red">组件、指令和管道*只能*属于一个模块。**永远不要再次声明属于其它模块的类。**</p>
+<p style="border-left: 4px solid red; padding: 10px;">组件、指令和管道*只能*属于一个模块。**永远不要再次声明属于其它模块的类。**</p>
 
 如果有两个同名指令，只要在 import 时使用`as`关键字来为第二个指令创建个别名就可以了。
 
@@ -129,7 +129,7 @@ import {
 
 通过让`SharedModule`重新导出`CommonModule`和`FormsModule`模块，可以消除`CommonModule`和`FormsModule`模块重复导入。
 
-<p id="div-border-left-red">不要在共享模块中把应用级单例添加到`providers`中。 否则如果一个惰性加载模块导入了此共享模块，就会导致它自己也生成一份此服务的实例。</p>
+<p style="border-left: 4px solid red; padding: 10px;">不要在共享模块中把应用级单例添加到`providers`中。 否则如果一个惰性加载模块导入了此共享模块，就会导致它自己也生成一份此服务的实例。</p>
 
 ## 核心模块
 
@@ -180,7 +180,7 @@ static forRoot(config: UserServiceConfig): ModuleWithProviders {
   ],
 ```
 
-<p id="div-border-left-yellow">只在应用的根模块`AppModule`中调用`forRoot`。 如果在其它模块（特别是惰性加载模块）中调用它则违反了设计意图，并会导致运行时错误。
+<p style="border-left: 4px solid yellow; padding: 10px;">只在应用的根模块`AppModule`中调用`forRoot`。 如果在其它模块（特别是惰性加载模块）中调用它则违反了设计意图，并会导致运行时错误。
 
 别忘了*导入*其返回结果，而且不要把它添加到`@NgModule`的其它任何列表中。</p>
 

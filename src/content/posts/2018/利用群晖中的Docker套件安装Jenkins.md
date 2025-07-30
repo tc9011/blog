@@ -17,7 +17,7 @@ lang: zh
 
 ![20180623152975748974288.jpg](../_images/利用群晖中的Docker套件安装Jenkins/20180623152975748974288.jpg)
 
-<div class="dividing-line"></div>	
+---	
 
 ## 安装Jenkins
 

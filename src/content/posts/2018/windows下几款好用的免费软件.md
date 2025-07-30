@@ -28,15 +28,15 @@ Bandizip 同样支持文件右键菜单快速压缩/解压缩文件和文件夹�
 
 <p class="img-description">右键压缩</p>
 
-![20180722153224791491280.png](../_images/windows下几款好用的免费软件/20180722153224791491280.png)
+![右键压缩](../_images/windows下几款好用的免费软件/20180722153224791491280.png)
 
 <p class="img-description">右键解压</p>
 
-![20180722153224807393322.png](../_images/windows下几款好用的免费软件/20180722153224807393322.png)
+![右键解压](../_images/windows下几款好用的免费软件/20180722153224807393322.png)
 
 <p class="img-description">预览</p>
 
-![20180722153224822628709.png](../_images/windows下几款好用的免费软件/20180722153224822628709.png)
+![预览](../_images/windows下几款好用的免费软件/20180722153224822628709.png)
 
 当然，什么分卷压缩和加密压缩也不在话下：
 
@@ -96,7 +96,7 @@ ScreenToGif是一款录制Gif的小工具，免安装版只有818KB，使用也�
 
 总得来说ScreenToGif在使用上非常简单，效果也不错。
 
-<div class="dividing-line"></div>	
+---
 
 这里就罗列这三款软件，Windows上还有其他一些免费的软件，比如MobaXterm（SSH软件）、Typora（Markdown工具），Visual Studio Code（写代码利器），Fiddler（抓包工具）等，就不一一罗（wo）列（tai）出（lan）来（le）。
 

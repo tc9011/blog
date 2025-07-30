@@ -32,7 +32,7 @@ lang: zh
 
 把`<script>`标签放在HTML文档最后，`</body>`标签之前，这样即使加载脚本时，Windows对象的load事件依然可以执行对文档进行的各种操作。
 
-<p id="div-border-left-green">因为位于`<head>`中的脚本会导致浏览器不能并行加载其他文件。一般来说，根据HTTP规范，浏览器每次从同一个域名中最多只能同时下载两个文件。</p>
+<p style="border-left: 4px solid green; padding: 10px;">因为位于`<head>`中的脚本会导致浏览器不能并行加载其他文件。一般来说，根据HTTP规范，浏览器每次从同一个域名中最多只能同时下载两个文件。</p>
 
 ### 操作
 
@@ -56,7 +56,7 @@ if (a == b){			//true
 }
 ```
 
-<p id="div-border-left-red">这个语句求值结果是ture，因为`==`认为空字符串与false的含义相同。要进行严格比较，就要使用另一种等号：`===`。这个全等操作符会执行严格的比较，不仅比较值，而且会比较变量的类型：</p>
+<p style="border-left: 4px solid red; padding: 10px;">这个语句求值结果是ture，因为`==`认为空字符串与false的含义相同。要进行严格比较，就要使用另一种等号：`===`。这个全等操作符会执行严格的比较，不仅比较值，而且会比较变量的类型：</p>
 
 ```javascript
 var a = false;
@@ -68,7 +68,7 @@ if (a === b){			//flase
 
 ### 函数
 
-<p id="div-border-left-red">如果在某个函数中使用var，那个变量就被看做局部变量，它只存在这个函数上下文中；如果没有使用var，这个变量就被看做是全局变量，如果脚本里面出现一个与之同名的全局变量，这个函数就会改变这个全局变量的值。</p>
+<p style="border-left: 4px solid red; padding: 10px;">如果在某个函数中使用var，那个变量就被看做局部变量，它只存在这个函数上下文中；如果没有使用var，这个变量就被看做是全局变量，如果脚本里面出现一个与之同名的全局变量，这个函数就会改变这个全局变量的值。</p>
 
 ```javascript
 function square(num){
@@ -192,7 +192,7 @@ object.setAttribute(attribute,value);
 
 通过`setAttribute`对文档做出的修改后，再通过浏览器的view source（查看源码）选项去查看文档的源码时看到的仍将是改变前的值，也就是说<span id="inline-red">`setAttribute`做出的修改不会反映在文档本身的源码中</span>。这是因为：
 
-<p id="div-border-left-red">DOM的工作模式是：先加载文档的静态内容，再动态刷新，动态刷新不影响文档的静态内容。这正是DOM的真正威力：对页面进行刷新不需要再浏览器里刷新页面。</p>
+<p style="border-left: 4px solid red; padding: 10px;">DOM的工作模式是：先加载文档的静态内容，再动态刷新，动态刷新不影响文档的静态内容。这正是DOM的真正威力：对页面进行刷新不需要再浏览器里刷新页面。</p>
 
 ## 案例研究：JavaScript图片库
 
@@ -204,7 +204,7 @@ DOM是一种适用于多种环境和多种程序设计语言的通用型API。�
 
 #### 事件处理函数
 
-<p id="div-border-left-green">事件处理函数的工作机制：在给某个元素添加事件处理函数后，一旦事件发生，相应的JavaScript代码就会得到执行。被调用的JavaScript代码可以返回一个值，这个值将被传递给那个事件处理函数。</p>
+<p style="border-left: 4px solid green; padding: 10px;">事件处理函数的工作机制：在给某个元素添加事件处理函数后，一旦事件发生，相应的JavaScript代码就会得到执行。被调用的JavaScript代码可以返回一个值，这个值将被传递给那个事件处理函数。</p>
 
 例如：给某个链接添加一个`onclick`事件处理函数，`onclick`事件处理函数所触发的JavaScript代码会返回`false`或者`true`。当这个链接被点击时，如果那段JavaScript代码返回的是`true`，`onclick`事件处理函数就认为”这个链接被点击了“；反之，如果返回值是`false`,`onclick`事件处理函数就认为”这个链接没有被点击“。
 
@@ -304,7 +304,7 @@ for (var i=0; i<links.length; i++){
 
 #### 尽量减少访问DOM和尽量减少标记
 
-<p id="div-border-left-red">访问DOM对脚本性能会产生非常大的影响。多次访问相同的DOM，可以先把第一次搜索的结果保存在一个变量中。</p>
+<p style="border-left: 4px solid red; padding: 10px;">访问DOM对脚本性能会产生非常大的影响。多次访问相同的DOM，可以先把第一次搜索的结果保存在一个变量中。</p>
 
 ```javascript
 if (document.getElementsByTagName("a").length > 0){
@@ -424,7 +424,7 @@ createTextNode方法用来创建文本节点。
 
 > 如果元素存在只是为让DOM方法处理，用DOM方法来创建它们才是最合适的。
 
-<p id="div-border-left-yellow">这样是不是太极端了，增加了对DOM的操作，会不会影响性能？</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">这样是不是太极端了，增加了对DOM的操作，会不会影响性能？</p>
 
 #### 在已有元素前插入一个新元素
 

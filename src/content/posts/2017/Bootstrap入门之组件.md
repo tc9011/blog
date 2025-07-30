@@ -22,7 +22,7 @@ lang: zh
 
 必须创建一个嵌套的 `<span>` 标签，并将图标类应用到这个 `<span>` 标签上。
 
-<p id="div-border-left-red">图标类不能和其他组件直接联合使用，不能在同一个元素上与其他类共同存在，只能应用在不包含任何文本内容或子元素的元素上。</p>
+<p style="border-left: 4px solid red; padding: 10px;">图标类不能和其他组件直接联合使用，不能在同一个元素上与其他类共同存在，只能应用在不包含任何文本内容或子元素的元素上。</p>
 
 ```html
 <span class="glyphicon glyphicon-search" aria-hidden="true"></span>

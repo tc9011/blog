@@ -535,7 +535,7 @@ ngOnInit(): void {
 - `distinctUntilChanged`确保只在过滤条件变化时才发送请求， 这样就不会重复请求同一个搜索词了。
 - `switchMap`会为每个从`debounce`和`distinctUntilChanged`中通过的搜索词调用搜索服务。 它会取消并丢弃以前的搜索可观察对象，只保留最近的。
 
-<p id="div-border-left-green">[switchMap操作符](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/flatmaplatest.md) (以前叫"flatMapLatest")是非常智能的。
+<p style="border-left: 4px solid green; padding: 10px;">[switchMap操作符](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/flatmaplatest.md) (以前叫"flatMapLatest")是非常智能的。
 
 每次符合条件的按键事件都会触发一次对`http`方法的调用。即使在发送每个请求前都有 300 毫秒的延迟， 我们仍然可能同时拥有多个在途的 HTTP 请求，并且它们返回的顺序未必就是发送时的顺序。
 

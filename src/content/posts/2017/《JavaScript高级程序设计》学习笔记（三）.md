@@ -86,7 +86,7 @@ var newValue = window.oldValue;
 </html>
 ```
 
-<p id="div-border-left-red">`<frame>`和`<frameset>`元素已经从web标准中删除虽然一些浏览器目前仍然支持它，但也许会在未来的某个时间停止支持，请尽量不要使用该特性。</p>
+<p style="border-left: 4px solid red; padding: 10px;">`<frame>`和`<frameset>`元素已经从web标准中删除虽然一些浏览器目前仍然支持它，但也许会在未来的某个时间停止支持，请尽量不要使用该特性。</p>
 
 对于上面例子，可以通过`window.frames[0]`或者`window.frames['topFrame']`来引用上方的框架。不过，最好使用`top`，而非`window`来引用这些框架（比如，通过`top.frames[0]`）。
 

@@ -232,7 +232,7 @@ $('#myModal').modal('handleUpdate')
 
 ![20170502149373927135478.png](../_images/Bootstrap入门之JavaScript插件/20170502149373927135478.png)
 
-<p id="div-border-left-yellow">务必为 `.modal` 添加 `role="dialog"` 和 `aria-labelledby="..."` 属性，用于指向模态框的标题栏；为 `.modal-dialog` 添加 `aria-hidden="true"` 属性。
+<p style="border-left: 4px solid yellow; padding: 10px;">务必为 `.modal` 添加 `role="dialog"` 和 `aria-labelledby="..."` 属性，用于指向模态框的标题栏；为 `.modal-dialog` 添加 `aria-hidden="true"` 属性。
 
 另外，还应该通过 `aria-describedby` 属性为模态框 `.modal` 添加描述性信息。
 

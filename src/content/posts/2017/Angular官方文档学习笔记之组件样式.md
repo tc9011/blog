@@ -87,7 +87,7 @@ export class HeroAppComponent {
 }
 ```
 
-<p id="div-border-left-yellow">`/deep/`和`>>>`选择器只能被用在**视图封装模式的仿真 (emulated) **模式下。</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">`/deep/`和`>>>`选择器只能被用在**视图封装模式的仿真 (emulated) **模式下。</p>
 
 ## 把样式加载进组件中
 
@@ -167,11 +167,11 @@ export class HeroDetailsComponent {
 }
 ```
 
-<p id="div-border-left-yellow">像 Webpack 这类模块打包器的用户可能会使用`styles`属性来在构建时从外部文件中加载样式。它们可能这样写：`styles: [require('my.component.css')]`。
+<p style="border-left: 4px solid yellow; padding: 10px;">像 Webpack 这类模块打包器的用户可能会使用`styles`属性来在构建时从外部文件中加载样式。它们可能这样写：`styles: [require('my.component.css')]`。
 
 注意，是在设置`styles`属性，**而不是**`styleUrls`属性！ 是模块打包器在加载 CSS 字符串，而不是 Angular。 Angular 看到的只是打包器加载它们之后的 CSS 字符串。 对 Angular 来说，这跟我们手写了`styles`数组没有任何区别。</p>
 
-<p id="div-border-left-yellow">上面代码中的URL路径是基于根组件。通过把组件元数据的`moduleId`属性设置为`module.id`，我们可以更改 Angular 计算完整 URL 的方式：</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">上面代码中的URL路径是基于根组件。通过把组件元数据的`moduleId`属性设置为`module.id`，我们可以更改 Angular 计算完整 URL 的方式：</p>
 
 ```typescript
 @Component({
@@ -207,5 +207,5 @@ export class QuestSummaryComponent { }
 encapsulation: ViewEncapsulation.Native
 ```
 
-<p id="div-border-left-yellow">当使用默认的仿真模式时，Angular 会对组件的所有样式进行预处理，让它们模仿出标准的 Shadow CSS 作用域规则。比如：一个元素在原生封装方式下可能是 Shadow DOM 的宿主，它会被自动添加上一个`_nghost`属性。组件视图中的每一个元素，都有一个`_ngcontent`属性，它会标记出该元素是哪个宿主的模拟 Shadow DOM。</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">当使用默认的仿真模式时，Angular 会对组件的所有样式进行预处理，让它们模仿出标准的 Shadow CSS 作用域规则。比如：一个元素在原生封装方式下可能是 Shadow DOM 的宿主，它会被自动添加上一个`_nghost`属性。组件视图中的每一个元素，都有一个`_ngcontent`属性，它会标记出该元素是哪个宿主的模拟 Shadow DOM。</p>
 

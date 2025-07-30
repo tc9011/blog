@@ -15,7 +15,7 @@ Google Chrome，是一个由Google公司开发的一款设计简单、高效的�
 
 作为用了7年的chrome的老用户，下面推荐一下我常用的chrome扩展程序。
 
-<p id="div-border-left-yellow">因为某些原因，如果不能去chrome网上应用商店下载，可以去[chrome插件](http://chromecj.com/)和[插件网](http://www.cnplugins.com/)下载，然后自行安装，安装教程参考:[怎么在谷歌浏览器中安装.crx扩展名的离线Chrome插件？](http://chromecj.com/utilities/2014-09/181.html)。</p>
+<p style="border-left: 4px solid yellow; padding: 10px;">因为某些原因，如果不能去chrome网上应用商店下载，可以去[chrome插件](http://chromecj.com/)和[插件网](http://www.cnplugins.com/)下载，然后自行安装，安装教程参考:[怎么在谷歌浏览器中安装.crx扩展名的离线Chrome插件？](http://chromecj.com/utilities/2014-09/181.html)。</p>
 
 ## uBlock Origin
 
