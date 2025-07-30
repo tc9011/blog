@@ -12,7 +12,7 @@ lang: zh
 
 <!--more-->
 
-<p id="div-border-left-green">本文是[Bootstrap中文网](http://v3.bootcss.com/getting-started/)的学习笔记</p>
+> 本文是[Bootstrap中文网](http://v3.bootcss.com/getting-started/)的学习笔记
 
 ## Glyphicons 字体图标
 

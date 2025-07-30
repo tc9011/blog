@@ -12,7 +12,7 @@ lang: zh
 
 <!--more-->
 
-<p id="div-border-left-green">本文是[《玩转Bootstrap》](http://www.imooc.com/learn/141)和[Bootstrap中文网](http://v3.bootcss.com/getting-started/)的学习笔记</p>
+> 本文是[《玩转Bootstrap》](http://www.imooc.com/learn/141)和[Bootstrap中文网](http://v3.bootcss.com/getting-started/)的学习笔记
 
 ## Bootstrap简介
 
