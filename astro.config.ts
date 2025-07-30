@@ -2,7 +2,7 @@ import mdx from '@astrojs/mdx'
 import partytown from '@astrojs/partytown'
 import sitemap from '@astrojs/sitemap'
 import Compress from 'astro-compress'
-import { defineConfig } from 'astro/config'
+import { defineConfig, sharpImageService } from 'astro/config'
 import rehypeKatex from 'rehype-katex'
 import rehypeSlug from 'rehype-slug'
 import remarkDirective from 'remark-directive'
@@ -92,5 +92,8 @@ export default defineConfig({
     headers: {
       'Access-Control-Allow-Origin': 'https://giscus.app',
     },
+  },
+  image: {
+    service: sharpImageService({ limitInputPixels: false }),
   },
 })

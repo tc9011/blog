@@ -76,7 +76,7 @@ function validateOptions({ colorCount = 10, quality = 10 } = {}) {
 
 async function loadImg(img: Buffer | string) {
   try {
-    const instance = sharp(img)
+    const instance = sharp(img, { limitInputPixels: false })
     const [buffer, { format }] = await Promise.all([
       instance.toBuffer(),
       instance.metadata(),
@@ -193,7 +193,7 @@ function findOklabBits(targetL: number, targetA: number, targetB: number) {
 
 async function generateLqipValue(imagePath: string): Promise<number | null> {
   try {
-    const theSharp = sharp(imagePath)
+    const theSharp = sharp(imagePath, { limitInputPixels: false })
     const [stats, previewBuffer, dominantColor] = await Promise.all([
       theSharp.stats(),
       theSharp
