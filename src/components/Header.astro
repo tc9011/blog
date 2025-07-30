@@ -65,9 +65,14 @@ const SubtitleTag = isPost ? 'div' : 'h2'
     logo && (
       <div
         class="mb-1.5 mt-2.5 h-20 w-20 rounded-full bg-cover bg-center"
-        style={`background-image: url('${logo}');`}
-        aria-hidden={true}
-      />
+      >
+        <img
+          src={logo}
+          alt={headerTitle}
+          class="h-full w-full rounded-full object-cover"
+          loading="lazy"
+        />
+      </div>
     )
   }
 </header>
