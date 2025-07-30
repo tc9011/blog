@@ -19,6 +19,9 @@ export const themeConfig: ThemeConfig = {
     // favicon url
     // recommended formats: svg, png or ico
     favicon: '/icons/favicon.ico', // or https://example.com/favicon.svg
+    // site logo url
+    // recommended formats: svg, png or ico
+    logo: '/logo/20161109360612.JPG', // or https://example.com/logo.png
   },
   // SITE INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
 

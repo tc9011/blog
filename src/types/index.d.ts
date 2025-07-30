@@ -11,6 +11,7 @@ export interface ThemeConfig {
     author: string
     url: string
     favicon: string
+    logo: string
   }
   color: {
     mode: 'light' | 'dark' | 'auto'
