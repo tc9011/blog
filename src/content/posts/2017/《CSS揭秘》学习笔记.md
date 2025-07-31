@@ -207,7 +207,7 @@ li{ background: var(--accent-color);}
 
 在背景与边框第三版中可以通过`background-clip`属性来调整上面的默认行为带来的不便。
 
-```CSS
+```css
 border: 10px solid hsla(0,0%,100%,0.5);
 background: white;
 background-clip: padding-box;
@@ -972,7 +972,7 @@ hyphens: auto;
 
 如果你的结构代码在多个连续的 `<dd> `之间包含了（未加 注释的）空白符，那么逗号前面会有一个空格。可以利用负外边距修复这个问 题，但如果你的内容是以不一样的字体和尺寸来 显示的， 这个空隙的宽度就 不一定刚好 是 0.25em 。
 
-```CSS
+```css
 dt, dd {
     display: inline;
     margin: 0;

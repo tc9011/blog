@@ -1059,7 +1059,7 @@ setClasses() {
 
 `NgStyle`绑定可以同时设置多个内联样式。[样式绑定](https://angular.cn/docs/ts/latest/guide/template-syntax.html#style-binding)是设置*单一*样式值的简单方式。如果要同时设置*多个*内联样式，`NgStyle`指令可能是更好的选择。
 
-```HTML
+```html
 <div [ngStyle]="setStyles()">
   This div is italic, normal weight, and extra large (24px).
 </div>
