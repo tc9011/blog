@@ -85,7 +85,7 @@ Git和Node.js安装完了就可以用npm安装Hexo，在mac的终端内输入下
 
 将下面的信息补充完整（your_name都换成你自己的用户名），注意Hexo 5.0以后type应该写成git而不是github，这又是一处血的教训（姚明脸）。
 
-```deploy:
+```yaml:
  type: git
   repository: https://github.com/your_name/your_name.github.io
   branch: master
