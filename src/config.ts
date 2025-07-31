@@ -1,5 +1,4 @@
 import type { ThemeConfig } from '@/types'
-import process from 'node:process'
 
 export const themeConfig: ThemeConfig = {
   // SITE INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
@@ -126,7 +125,7 @@ export const themeConfig: ThemeConfig = {
     verification: {
       // google search console
       // https://search.google.com/search-console
-      google: process.env.GOOGLE_SITE_VERIFICATION || '',
+      google: import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION || '',
       // bing webmaster tools
       // https://www.bing.com/webmasters
       bing: '',

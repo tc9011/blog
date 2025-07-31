@@ -2,6 +2,7 @@
 import themeConfig from '@/config'
 import { ui } from '@/i18n/ui'
 import { getPageInfo } from '@/utils/page'
+import Search from './Search.astro'
 
 const { currentLang, getLocalizedPath, isPost } = getPageInfo(Astro.url.pathname)
 const { title, subtitle, i18nTitle, logo } = themeConfig.site
@@ -75,4 +76,7 @@ const SubtitleTag = isPost ? 'div' : 'h2'
       </div>
     )
   }
+  <div class="ml-6 mt-2.5 lg:ml-[-16px] lg:mt-5">
+    <Search />
+  </div>
 </header>
